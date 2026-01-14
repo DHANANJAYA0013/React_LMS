@@ -1,0 +1,73 @@
+.subject-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.subject-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-color: #667eea;
+}
+
+.subject-card.selected {
+  border-color: #667eea;
+  background: linear-gradient(135deg, #f5f7ff 0%, #eef1ff 100%);
+}
+
+.subject-icon {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.subject-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 0.75rem 0;
+  text-align: center;
+}
+
+.subject-description {
+  font-size: 0.95rem;
+  color: #666;
+  text-align: center;
+  flex: 1;
+  margin: 0 0 1rem 0;
+  line-height: 1.5;
+}
+
+.subject-footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 0.75rem;
+  border-top: 1px solid #eee;
+}
+
+.video-count {
+  font-size: 0.9rem;
+  color: #667eea;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .subject-card {
+    padding: 1.25rem;
+  }
+
+  .subject-icon {
+    font-size: 2.5rem;
+  }
+
+  .subject-name {
+    font-size: 1.1rem;
+  }
+}

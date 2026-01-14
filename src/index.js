@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { seedDemoUsers } from './utils/seedDemoUsers';
+
+// Seed demo users on app load
+seedDemoUsers();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
